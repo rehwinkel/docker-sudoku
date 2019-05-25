@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
             clues = 30;
         }
         console.log("Attempting to generate sudoku with", clues, "clues.");
-        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.writeHead(200, { 'Content-Type': 'application/json' });
         let resultObject = sudoku.generate(clues, 300);
 
         var count = 0;
