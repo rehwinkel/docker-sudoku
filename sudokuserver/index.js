@@ -45,7 +45,7 @@ app.get("/", (req, res) => {
     console.log("Generated sudoku with", count, "clues in", new Date().getTime() - start, "ms.");
 });
 
-let port = 2012;
+let port = 80;
 app.listen(port, () => {
     console.log("Started server on port " + port);
 });
