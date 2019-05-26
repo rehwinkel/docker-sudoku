@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY sudokuserver /app
 
-RUN npm i --save node-gyp
+RUN npm i --save node-gyp express cors
 
 RUN node ./node_modules/node-gyp/bin/node-gyp.js configure 
 RUN node ./node_modules/node-gyp/bin/node-gyp.js build 
